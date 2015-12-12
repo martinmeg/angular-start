@@ -14,6 +14,5 @@ angular.module('startApp')
   		image: 'http://vignette4.wikia.nocookie.net/jamesbond/images/b/b3/Skyfall_Logo.jpg',
   		description: 'James Bond movie'
   	}
-    $scope.movieTitle = movie.title;
-    $scope.movieDescription = movie.description;
+    $scope.movie = movie;
   });
