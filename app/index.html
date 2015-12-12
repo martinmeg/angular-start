@@ -50,8 +50,11 @@
 
     <div class="container">
     <div ng-controller="MainCtrl">
-      <h1>The title of the movie is: "{{movie.title}}"</h1>
-      <div ng-bind="movie.description"></div>
+      <div ng-repeat="movie in movies" class="panel panel-default text-center">
+        <h3 ng-bind="movie.title"></h3>
+        <img src="{{movie.image}}" />
+        <div ng-bind="movie.description"></div>
+      </div>
     </div>
     </div>
 
