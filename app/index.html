@@ -49,7 +49,10 @@
     </div>
 
     <div class="container">
-    <div ng-view=""></div>
+    <div ng-controller="MainCtrl">
+      <h1>{{movieTitle}}</h1>
+      <div ng-bind="movieDescription"></div>
+    </div>
     </div>
 
     <div class="footer">
